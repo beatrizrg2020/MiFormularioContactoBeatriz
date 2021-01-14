@@ -96,27 +96,29 @@ public class MainActivity extends AppCompatActivity {
     private void startActivities(Intent i){
 
     }
-private void mostrarDatosMainActivity(){
 
-Bundle dato=this.getIntent().getExtras();
-if (dato!= null){
+    //metodo mostrar datos
+    private void mostrarDatosMainActivity(){
 
-String nombreRetorno=dato.getString("name1");
-String numeroTelefono=dato.getString("telefon");
-String email1=dato.getString("email");
-String descrip=dato.getString("descript");
-String verfecha =dato.getString("fechana");
+        Bundle dato=this.getIntent().getExtras();
+        if (dato!= null){
 
-nombre.setText(nombreRetorno);
-telefono.setText(numeroTelefono);
-email.setText(email1);
-descripcion.setText(descrip);
-eFecha.setText(verfecha);
+        String nombreRetorno=dato.getString("name1");
+        String numeroTelefono=dato.getString("telefon");
+        String email1=dato.getString("email");
+        String descrip=dato.getString("descript");
+        String verfecha =dato.getString("fechana");
+
+        nombre.setText(nombreRetorno);
+        telefono.setText(numeroTelefono);
+        email.setText(email1);
+        descripcion.setText(descrip);
+        eFecha.setText(verfecha);
 
 
-}
-}
-private void starActivities(Intent i){
+        }
+    }
+    private void starActivities(Intent i){
 
-}
+    }
 }
